@@ -97,7 +97,7 @@ def calc_interest(principal_amount,roi,num_of_years):
         num_of_years = float(num_of_years)
         
         #amount = (((principal_amount*roi)/100)* num_of_years) + principal_amount
-        amount = round(principal_amount*((1+(roi/12))**(12*5)),2)
+        amount = round(principal_amount*((1+roi)**(5)),2)
         print("After "+ str(num_of_years) + " Years"+ "Your Principal Amount "+ str(principal_amount) + " over an interest rate of " + str(roi) + " is: " + str(amount))
     
     except:
